@@ -25,3 +25,13 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: rgb(7, 226, 255);
+}
+
+::selection {
+  color: white;
+  background: rgb(7, 226, 255);
+}
