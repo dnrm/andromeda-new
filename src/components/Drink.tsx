@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface DrinkProps {
   name: string;
@@ -9,7 +10,10 @@ interface DrinkProps {
 
 const Drink = ({ name, price, image }: DrinkProps) => {
   return (
-    <div className="drink flex-col flex w-full gap-4 cursor-pointer group">
+    <Link
+      href={"/menu/" + name.toLowerCase()}
+      className="drink flex-col flex w-full gap-4 cursor-pointer group"
+    >
       <Image
         src={"https://placehold.co/600x600/png"}
         alt="Placeholder image"
@@ -30,7 +34,7 @@ const Drink = ({ name, price, image }: DrinkProps) => {
           }).format(price)}
         </p>
       </div>
-    </div>
+    </Link>
   );
 };
 

@@ -14,7 +14,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              className="website-title uppercase text-bright-yellow text-6xl md:text-8xl text-center xl:text-9xl tracking-tighter font-black font-area"
+              className="text-white website-title uppercase text-bright-yellow text-6xl md:text-8xl text-center xl:text-9xl tracking-tighter font-black font-area"
             >
               Andromeda
               <br />

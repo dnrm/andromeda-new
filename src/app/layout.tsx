@@ -20,7 +20,7 @@ export default function RootLayout({
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/skx1gnd.css" />
       </head>
-      <body className={inter.className}>
+      <body className={inter.className + ' bg-white'}>
         <Navigation />
         {children}
       </body>
