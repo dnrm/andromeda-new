@@ -1,8 +1,11 @@
 import Image from "next/image";
 import Hero from "../components/Hero";
 import Menu from "@/components/Menu";
+import getProducts from "@/lib/getProducts";
 
 export default function Home() {
+  const products = getProducts();
+
   return (
     <main className="bg-white">
       <Hero />
@@ -49,7 +52,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <Menu />
+      <Menu products={products} />
     </main>
   );
 }
