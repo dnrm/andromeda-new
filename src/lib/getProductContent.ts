@@ -3,7 +3,7 @@ import matter from "gray-matter";
 
 const getProductContent = (slug: string) => {
   const folder = "products/";
-  const file = `${folder}/${slug}.md`;
+  const file = `${folder}${slug}.md`;
   const content = fs.readFileSync(file);
 
   const matterResult = matter(content);
