@@ -18,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <title>Andromeda Coffee</title>
         <link rel="stylesheet" href="https://use.typekit.net/skx1gnd.css" />
       </head>
       <body className={inter.className + ' bg-white'}>
