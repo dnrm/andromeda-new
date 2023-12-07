@@ -1,5 +1,6 @@
 import React from "react";
 import Drink from "@/components/Drink";
+import getProducts from "@/lib/getProducts";
 import getProduct from "@/lib/getProductContent";
 import getProductMetadata from "@/lib/getProductMetadata";
 
@@ -7,6 +8,14 @@ interface PageProps {
   params: {
     item: string;
   };
+}
+
+export const generateStaticParams = async () => {
+
+  const products = getProducts();
+  return products.map((product) => {
+    slug: product.slug
+  });
 }
 
 const Page = ({ params }: PageProps) => {

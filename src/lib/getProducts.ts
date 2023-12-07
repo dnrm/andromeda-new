@@ -13,6 +13,7 @@ const getProducts = () => {
       name: matterResult.data.name,
       price: matterResult.data.price,
       image: matterResult.data.image,
+      slug: matterResult.data.slug,
     };
   });
 

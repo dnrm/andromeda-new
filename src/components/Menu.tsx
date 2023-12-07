@@ -8,9 +8,6 @@ interface MenuProps {
 }
 
 const Menu = ({ products }: MenuProps) => {
-
-  console.log(products)
-
   if (!products) {
     console.log("No products found")
   }
