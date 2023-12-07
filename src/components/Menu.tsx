@@ -1,10 +1,22 @@
 import React from "react";
 import Drink from "./Drink";
 import Link from "next/link";
+import { Product } from "@/lib/Products";
 
-const Menu = () => {
+interface MenuProps {
+  products: Product[];
+}
+
+const Menu = ({ products }: MenuProps) => {
+
+  console.log(products)
+
+  if (!products) {
+    console.log("No products found")
+  }
+
   return (
-    <div className="pt-20">
+    <div className="pt-20 px-2">
       <div className="quality bg-white mx-auto max-w-6xl py-4 gap-8">
         <div className="text flex flex-col gap-8 col-span-1 md:col-span-2">
           <div className="title flex justify-start items-center gap-6">
@@ -19,18 +31,9 @@ const Menu = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mx-auto max-w-6xl text-black font-area">
-        <Drink name="Americano" price={4} />
-        <Drink name="Espresso" price={3} />
-        <Drink name="Latte" price={6} />
-        <Drink name="V60" price={6.5} />
-        <Drink name="Drip coffee" price={3} />
-        <Drink name="Aeropress coffee" price={4} />
-        <Drink name="Macchiatto" price={4} />
-        <Drink name="Cortado" price={4} />
-        <Drink name="Cappuccino" price={6} />
-        <Drink name="Cheesecake" price={7.5} />
-        <Drink name="Brownie" price={4} />
-        <Drink name="Cookie" price={2.5} />
+        {products.map((i) => {
+          return <Drink key={i.name} price={i.price} name={i.name} image={i.image} />;
+        })}
       </div>
       <div className="mx-auto max-w-6xl pt-20 pb-24 flex justify-center items-center">
         <div className="cta">

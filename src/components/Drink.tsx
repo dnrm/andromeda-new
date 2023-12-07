@@ -15,11 +15,11 @@ const Drink = ({ name, price, image }: DrinkProps) => {
       className="drink flex-col flex w-full gap-4 cursor-pointer group"
     >
       <Image
-        src={"https://placehold.co/600x600/png"}
+        src={image || "https://placehold.co/600x600/png"}
         alt="Placeholder image"
         height={300}
         width={300}
-        className="w-full"
+        className="w-full h-full object-cover aspect-square"
       />
       <div className="caption flex justify-between items-center">
         <div className="title">
