@@ -1,8 +1,9 @@
 import fs from "fs";
+import path from "path";
 import matter from "gray-matter";
 
 const getProducts = () => {
-  const folder = "products/";
+  const folder = path.join(process.cwd(), "products/");
   const files = fs.readdirSync(folder);
   const markdownProducts = files.filter((file) => file.endsWith(".md"));
 
