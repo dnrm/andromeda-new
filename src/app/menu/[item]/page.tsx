@@ -11,12 +11,11 @@ interface PageProps {
 }
 
 export const generateStaticParams = async () => {
-
   const products = getProducts();
   return products.map((product) => {
-    item: product.slug
+    item: product.slug;
   });
-}
+};
 
 const Page = ({ params }: PageProps) => {
   const content = getProduct(params.item);

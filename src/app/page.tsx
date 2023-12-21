@@ -7,9 +7,9 @@ export default function Home() {
   const products = getProducts();
 
   return (
-    <main className="bg-white">
+    <main className="bg-white flex flex-col gap-8">
       <Hero />
-      <div className="about bg-white mx-auto max-w-6xl py-12 gap-8 flex flex-col">
+      <div className="about bg-white mx-auto max-w-6xl pt-12 gap-8 flex flex-col">
         <div className="title flex justify-start items-center gap-6">
           <h1 className="font-area text-4xl text-black font-bold">
             Coffee you can trust
@@ -26,7 +26,7 @@ export default function Home() {
           Roasters from the UK, and The Miners from the Czech Republic.
         </p>
       </div>
-      <div className="quality bg-white mx-auto max-w-6xl py-8 gap-8 grid grid-cols-1 md:grid-cols-3">
+      <div className="quality bg-white mx-auto max-w-6xl gap-10 grid grid-cols-1 md:grid-cols-3">
         <div className="text flex flex-col gap-8 col-span-1 md:col-span-2">
           <div className="title flex justify-start items-center gap-6">
             <h1 className="font-area text-4xl text-black font-bold">

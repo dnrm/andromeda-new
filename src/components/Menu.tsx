@@ -13,7 +13,7 @@ const Menu = ({ products }: MenuProps) => {
   }
 
   return (
-    <div className="pt-20 px-2">
+    <div className="px-2">
       <div className="quality bg-white mx-auto max-w-6xl py-4 gap-8">
         <div className="text flex flex-col gap-8 col-span-1 md:col-span-2">
           <div className="title flex justify-start items-center gap-6">
