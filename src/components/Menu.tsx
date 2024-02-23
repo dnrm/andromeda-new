@@ -29,7 +29,7 @@ const Menu = ({ products }: MenuProps) => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mx-auto max-w-6xl text-black font-area">
         {products.map((i) => {
-          return <Drink key={i.name} price={i.price} name={i.name} image={i.image} />;
+          return <Drink key={i.name} price={i.price} name={i.name} image={i.image} slug={i.slug} />;
         })}
       </div>
       <div className="mx-auto max-w-6xl pt-20 pb-24 flex justify-center items-center">

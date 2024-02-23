@@ -25,7 +25,7 @@ const Page = ({ params }: PageProps) => {
 
   return (
     <div className="py-28 bg-white text-black font-area p-4">
-      <div className="columns grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+      <div className="columns grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
         <div className="w-full mx-auto flex flex-col gap-4">
           <Image
             src={image || "https://placehold.co/600x600/png"}

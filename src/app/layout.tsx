@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
+import { CartProvider } from "@/context/cart";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,7 @@ export default function RootLayout({
         <title>Andromeda Coffee</title>
         <link rel="stylesheet" href="https://use.typekit.net/skx1gnd.css" />
       </head>
-      <body className={inter.className + ' bg-white'}>
+      <body className={inter.className + " bg-white"}>
         <Navigation />
         {children}
       </body>
