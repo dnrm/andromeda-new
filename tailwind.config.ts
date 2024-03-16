@@ -15,6 +15,7 @@ const config: Config = {
       },
       fontFamily: {
         area: "area-normal, sans-serif",
+        urbanist: "Urbanist, sans-serif",
       },
     },
   },

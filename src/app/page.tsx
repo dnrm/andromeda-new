@@ -1,58 +1,60 @@
 import Image from "next/image";
 import Hero from "../components/Hero";
-import Menu from "@/components/Menu";
-import getProducts from "@/lib/getProducts";
 
 export default function Home() {
-  const products = getProducts();
+  const photos = [
+    "/IMG_3180.JPG",
+    "/IMG_4277.JPEG",
+    "/IMG_3320.JPG",
+    "/IMG_0573.JPEG",
+  ];
 
   return (
     <main className="bg-white flex flex-col gap-8">
       <Hero />
-      <div className="about bg-white mx-auto max-w-6xl pt-12 gap-8 flex flex-col">
-        <div className="title flex justify-start items-center gap-6">
-          <h1 className="font-area text-4xl text-black font-bold">
-            Coffee you can trust
+      <div className="about bg-white mx-auto max-w-6xl gap-8 flex flex-col">
+        <div className="title flex flex-col justify-center items-center gap-4">
+          <h1 className="font-area text-2xl text-black font-bold uppercase text-center">
+            Andromeda Coffee
           </h1>
-          <div className="bg-teal-600 w-48 h-1 mt-3" />
-        </div>
-        <p className="text-neutral-600 font-area font-medium text-justify leading-loose">
-          At Andromeda we strive to create the perfect cup of coffee, using
-          beans from Lavazza, guranteeing a tasty and satisfying experience. We
-          also offer seasonal coffee’s such as beans from foreign shops when we
-          go on trips. Some past offerings include roasts from the UK, Germany,
-          and Czech Republic. Brands from the aforementioned countries include
-          Bonanza Coffee Roasters, Five Elephant from Germany, Origin Coffee
-          Roasters from the UK, and The Miners from the Czech Republic.
-        </p>
-      </div>
-      <div className="quality bg-white mx-auto max-w-6xl gap-10 grid grid-cols-1 md:grid-cols-3">
-        <div className="text flex flex-col gap-8 col-span-1 md:col-span-2">
-          <div className="title flex justify-start items-center gap-6">
-            <h1 className="font-area text-4xl text-black font-bold">
-              Our quality
-            </h1>
-            <div className="bg-teal-600 w-48 h-1 mt-3" />
-          </div>
-          <p className="text-neutral-600 font-area font-medium text-justify leading-loose">
-            As a coffee fanatic myself, I strive to deliver customers with the
-            best coffee experience they&quot;ll ever have. We use high quality
-            coffee beans from Lavazza and guarantee a tasty and satisfying
-            experience. We specialize in every aspect of coffee, from the bean
-            to the milk texture, to the temperature of the cup.
+          <p className="font-area text-sm max-w-xl text-center leading-relaxed">
+            Andromeda Coffee is a home coffee project that aims to provide
+            customers with high quality coffee at an affordable price.
           </p>
         </div>
-        <div className="image w-full">
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-1 h-80">
+        <div className="relative">
           <Image
-            src="/espresso-machine.jpg"
-            height={250}
-            width={250}
-            className="w-full"
-            alt="Espresso machine"
+            alt=""
+            layout="fill"
+            objectFit="cover"
+            src="https://plus.unsplash.com/premium_photo-1674931348670-68936350ed55?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           />
         </div>
       </div>
-      <Menu products={products} />
+      <div className="about-brief grid grid-cols-1 md:grid-cols-2 h-96 font-area">
+        <div className="col-1 h-full w-full flex flex-col justify-center items-center text-center px-2 md:px-12 gap-4">
+          <h1 className="font-bold text-2xl">About Us</h1>
+          <p>
+            Andromeda Coffee is a coffee project created by a coffee enthusiast
+            who&apos;s passionate about sharing quality coffee with the world.
+            We believe that everyone deserves to have access to high quality
+            coffee at an affordable price. We are committed to providing our
+            customers with the best coffee experience possible.
+          </p>
+        </div>
+        <div className="col-2">
+          <div className="container relative w-full h-96">
+            <Image
+              alt=""
+              layout="fill"
+              objectFit="cover"
+              src="https://images.unsplash.com/photo-1559496417-e7f25cb247f3?q=80&w=2728&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+          </div>
+        </div>
+      </div>
     </main>
   );
 }

@@ -1,7 +1,7 @@
 ---
 name: "Latte"
 image: "https://www.acouplecooks.com/wp-content/uploads/2020/09/Latte-Art-067s.jpg"
-price: 6
+price: 50
 slug: "latte"
 ---
 

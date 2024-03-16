@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import { CartProvider } from "@/context/cart";
+import Footer from "@/components/Footer";
+import Announcement from "@/components/Announcement";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,10 +23,29 @@ export default function RootLayout({
       <head>
         <title>Andromeda Coffee</title>
         <link rel="stylesheet" href="https://use.typekit.net/skx1gnd.css" />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          charSet="UTF-8"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin={''} />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body className={inter.className + " bg-white"}>
+        {/* <Announcement /> */}
         <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   );

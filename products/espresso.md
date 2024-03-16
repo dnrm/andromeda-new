@@ -1,7 +1,7 @@
 ---
 name: "Espresso"
 image: "/espresso-machine.jpg"
-price: 4
+price: 50
 slug: "espresso"
 ---
 
