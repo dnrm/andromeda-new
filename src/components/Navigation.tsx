@@ -12,7 +12,7 @@ const Navigation = () => {
   const cart = [];
 
   const navigationPaths = [
-    { label: "Home", url: "/" },
+    // { label: "Home", url: "/" },
     { label: "Menu", url: "/menu" },
     { label: "About", url: "/about" },
     { label: "Order", url: "/order" },
