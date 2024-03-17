@@ -24,10 +24,10 @@ const Drink = ({ name, price, image, slug }: DrinkProps) => {
       />
       <div className="caption flex justify-between items-center">
         <div className="title">
-          <h2 className="text-xl md:text-2xl font-bold">{name}</h2>
+          <h2 className="text-base md:text-2xl font-bold">{name}</h2>
           <div className="h-1 bg-teal-600 w-7 mt-1 transition-all duration-200 group-hover:w-full"></div>
         </div>
-        <p className="price">
+        <p className="price text-sm md:text-base">
           {new Intl.NumberFormat("en-UK", {
             style: "currency",
             currency: "USD",

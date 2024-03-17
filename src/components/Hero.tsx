@@ -20,10 +20,13 @@ const Hero = () => {
     <div className="bg-white w-full h-full overflow-hidden">
       <Slider {...settings}>
         <div className="slide h-[70vh] w-full relative">
-          <Image src="/espresso-machine.jpg" alt="" fill={true} objectFit="cover"  />
+          <Image src="/IMG_0573.JPEG" alt="" fill={true} objectFit="cover"  />
         </div>
         <div className="slide h-[70vh] w-full relative">
           <Image src="/hero.jpeg" alt="" fill={true} objectFit="cover"  />
+        </div>
+        <div className="slide h-[70vh] w-full relative">
+          <Image src="/IMG_4277.JPEG" alt="" fill={true} objectFit="cover"  />
         </div>
       </Slider>
     </div>

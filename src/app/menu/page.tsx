@@ -5,7 +5,11 @@ import { Product } from "@/lib/Products";
 
 const menu = () => {
   const products: Product[] = getProducts();
-  return <Menu products={products} />;
+  return (
+    <div className="pt-8">
+      <Menu products={products} />
+    </div>
+  );
 };
 
 export default menu;

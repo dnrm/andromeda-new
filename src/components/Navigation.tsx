@@ -13,8 +13,9 @@ const Navigation = () => {
 
   const navigationPaths = [
     { label: "Home", url: "/" },
-    { label: "About", url: "/about" },
     { label: "Menu", url: "/menu" },
+    { label: "About", url: "/about" },
+    { label: "Order", url: "/order" },
     // { label: "Gallery", url: "/gallery" },
   ];
 
@@ -29,7 +30,7 @@ const Navigation = () => {
             width={40}
             className="rounded-full"
           />
-          <p className="font-area font-bold text-3xl text-black">ANDROMEDA COFFEE</p>
+          <p className="font-area font-bold text-2xl md:text-3xl text-black">ANDROMEDA COFFEE</p>
         </div>
       </Link>
       <div className="divider">

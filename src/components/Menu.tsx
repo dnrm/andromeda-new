@@ -13,10 +13,10 @@ const Menu = ({ products }: MenuProps) => {
   }
 
   return (
-    <div className="px-2 pb-16">
-      <div className="quality bg-white mx-auto max-w-6xl py-8 gap-8">
+    <div className="px-4 pb-16">
+      <div className="quality bg-white mx-auto max-w-6xl pb-8 gap-8">
         <div className="text flex flex-col gap-8 col-span-1 md:col-span-2">
-          <p className="text-neutral-600 font-area font-medium text-justify leading-loose">
+          <p className="text-neutral-600 font-area font-medium text-justify leading-loose text-sm md:text-base">
             Check out our menu below. We offer a wide variety of coffee, tea,
             and other drinks. We also offer a wide variety of pastries and
             snacks.
